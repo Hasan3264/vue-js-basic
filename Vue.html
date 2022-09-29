@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Project</title>
+    <script src="Vue.js"></script>
+</head>
+
+<body>
+    <!-- 1s code vuejs  data proferty-->
+    <div id="app">
+        <p>{{title}}</p>
+        <p>{{Voll}}</p>
+        <p>{{array[2]}}</p>
+        <p>{{obj.name}}</p>
+        <!-- 1s code vuejs proferty-->
+
+
+        <!-- 2nd time code  methods-->
+        <p>{{grating()}}</p>
+        <!-- 2nd time code  methods-->
+
+
+        <!--dirrective  -->
+        <!-- 3nd time code v-bind -->
+        <img V-bind:src="src" V-bind:alt="alt">
+        <!-- 3nd time code  -->
+
+
+
+        <!-- 4nd time code  v-text v-html-->
+        <p V-text="mytext"></p>
+        <p V-html="myhtml"></p>
+        <!-- 4nd time code  -->
+        <!--dirrective  -->
+
+
+
+        <!-- condition -->
+        <!-- 5time code -->
+        <!-- <p V-if="userage>=allowed">{{user}}</p> -->
+        <p V-if="changeUser()">go by met</p>
+        <p V-else-if="changeUser()">go</p>
+        <p V-else>not</p>
+         <p V-show="user =='hasscan'">
+            show
+         </p>
+         
+         <p V-show="user !='hasscan'">
+            show not
+         </p>
+        <!-- 5time code -->
+        <!-- condition -->
+
+        <!-- looping 6time  code-->
+           <li v-for="(car, index) in cars">
+              {{index}} : {{car}}
+           </li>
+           <li v-for="(car, index,key) in hassan">
+             {{key}} : {{index}} : {{car}}
+           </li>
+           <li v-for="n in 2">
+              {{n}}
+           </li>
+        <!-- looping  6time code-->
+        <!-- v-once 7 time coading -->
+             <p>{{name}}</p>
+             <p V-once>{{name}} with no change</p>  
+             <p>{{update()}}</p>
+        <!-- v-once 7 time coading -->
+        <!-- event use argument and mmodifier 8 time coading -->
+             <h1>{{title}}</h1>
+             <button V-on:click.right="updatename('change_title', $event)">click</button>
+        <!-- event use 8 time coading -->
+        <!-- event use 9 time coading -->
+             <div V-on:mousemove="getCord" class="box">
+                  hover me
+               </div>
+               <p>X: {{x}}</p>
+               <p>Y: {{y}}</p>
+        <!-- event use 9 time coading -->
+        <!-- form handling  10 time coading -->
+      <form V-on:submit.prevent="handelform">
+         <input type="text">
+         <button type="submit">sub</button>
+      </form>
+        <!--form handling 10 time coading -->
+    </div>
+
+    <script src="Jscode.js"></script>
+</body>
+ <style>
+    .box{
+      background-color: blue;
+      width: 120px;
+      height: 120px;
+    }
+ </style>
+</html>

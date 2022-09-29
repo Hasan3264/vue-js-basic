@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- form handling v-model 10 time coading -->
+      <form V-on:submit.prevent="handelform">
+        <label>First name</label>
+        <input type="text" v-model="fromData.firstnmae">
+        <hr>
+        <label>last name</label>
+        <input type="text" v-model="fromData.lastnmae">
+        <br>
+        <button type="submit">sub</button>
+     </form>
+       <!--form handling 10 time coading -->
+
+       <!-- computed property   -->
+         <button V-on:click="a++">add A</button>
+         <button V-on:click="b++">add B</button>
+         <p>A ={{a}}</p>
+         <p>B ={{b}}</p>
+         <p>Salary +A ={{addToA}}</p>
+         <p>Salary +B ={{addToB}}</p>
+         <hr>
+       <!--  computed property  -->
+
+
+       <!-- short hands -->
+         <button @click="a++">add a</button>
+         <p>A ={{a}}</p>
+         <hr>
+         <a :href="link">google</a>
+         <hr>
+         <input type="text" v-model="name">
+         <hr>
+         <!-- short hands -->
+         <button @click="instancevaluchange()">click me</button>
+         <!-- crate more instanse -->
+        </div>
+        <hr>
+      <div id="app2">
+         <p>{{data}}</p>
+      </div>
+      <!--  crate more instanse -->
+
+      <!-- mount $ templet -->
+        <div id="app3"> </div>
+      <!-- mount $ templet -->
+
+
+      <!-- component -->
+      <div id="div4">
+        <hassan></hassan>
+        <hassan></hassan>
+        <hassan></hassan>
+        <hassan></hassan>
+      </div>
+      <!-- component -->
+    <script src="Jscode2.js"></script>
+</body>
+</html>
